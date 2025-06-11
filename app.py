@@ -1,4 +1,3 @@
-# streamlit_app.py
 import streamlit as st
 from converter import text_to_speech
 from upload import upload_to_s3

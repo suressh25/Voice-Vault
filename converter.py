@@ -7,7 +7,7 @@ def text_to_speech(text, output_file):
     response = polly.synthesize_speech(
         Text=text,
         OutputFormat="mp3",
-        VoiceId="Joanna",  # Other options: 'Matthew', 'Amy', etc.
+        VoiceId="Joanna",
     )
 
     with open(output_file, "wb") as file:
