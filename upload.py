@@ -8,8 +8,3 @@ def upload_to_s3(file_name, bucket, object_name=None):
     s3.upload_file(file_name, bucket, object_name)
     url = f"https://{bucket}.s3.amazonaws.com/{object_name}"
     return url
-
-
-# Create a bucket beforehand from AWS Console
-url = upload_to_s3("podcast.mp3", "voice-vault-suresh")
-print("Public Podcast URL:", url)
